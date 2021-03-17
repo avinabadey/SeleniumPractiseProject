@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Check">
+  <test name="Regression">
+  	<groups>
+  		<run>
+  			<exclude name="Smoke"/>
+  		</run>
+  	</groups>
+    <classes>
+      <class name="Test.Day1"/>
+      <class name="Test.Day2"/>
+      <class name="Test.Day3"/>
+      <class name="Test.Day4"/>
+    </classes>
+  </test> 
+</suite> 

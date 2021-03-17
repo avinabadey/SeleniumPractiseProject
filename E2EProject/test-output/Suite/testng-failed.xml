@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Practise.Listeners"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="Practise.HomePage">
+        <methods>
+          <include name="navigationBase" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Practise.HomePage -->
+      <class name="Practise.ValidateTitle">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Practise.ValidateTitle -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test name="validteTitle(failed)">
+    <classes>
+      <class name="Practise.HomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Practise.HomePage -->
+      <class name="Practise.ValidateTitle">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+          <include name="navigationBase"/>
+        </methods>
+      </class> <!-- Practise.ValidateTitle -->
+    </classes>
+  </test> <!-- validteTitle(failed) -->
+</suite> <!-- Failed suite [Suite] -->

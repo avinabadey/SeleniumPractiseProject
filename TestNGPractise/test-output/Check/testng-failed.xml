@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="6" parallel="tests" name="Failed suite [Check]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Test.Listeners"/>
+  </listeners>
+  <test thread-count="6" parallel="tests" name="Payment(failed)">
+    <parameter name="URL" value="carloan.com"/>
+    <classes>
+      <class name="Test.Day1">
+        <methods>
+          <include name="Demo"/>
+        </methods>
+      </class> <!-- Test.Day1 -->
+    </classes>
+  </test> <!-- Payment(failed) -->
+</suite> <!-- Failed suite [Check] -->

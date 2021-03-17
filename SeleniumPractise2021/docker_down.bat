@@ -1,0 +1,1 @@
+docker-compose -f docker-compose-v3.yml down >> docker_down_log.txt

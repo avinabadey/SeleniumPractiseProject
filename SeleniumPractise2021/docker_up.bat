@@ -1,0 +1,1 @@
+docker-compose -f docker-compose-v3.yml up >> docker_up_log.txt
